@@ -8,6 +8,11 @@ import { AllCourseComponent } from './all-course/all-course.component';
 import { PagesComponent } from './pages/pages.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
+import { MenuComponent } from './shared/menu/menu.component';
+import { AuthLinksComponent } from './shared/auth-links/auth-links.component';
+import { SocialLinksComponent } from './shared/social-links/social-links.component';
+import { PhoneComponent } from './shared/phone/phone.component';
+import { EmailComponent } from './shared/email/email.component';
 
 
 @NgModule({
@@ -17,7 +22,12 @@ import { ContactComponent } from './contact/contact.component';
     AllCourseComponent,
     PagesComponent,
     BlogComponent,
-    ContactComponent
+    ContactComponent,
+    MenuComponent,
+    AuthLinksComponent,
+    SocialLinksComponent,
+    PhoneComponent,
+    EmailComponent
   ],
   imports: [
     BrowserModule,
