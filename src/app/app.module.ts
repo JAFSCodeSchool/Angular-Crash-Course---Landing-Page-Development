@@ -13,6 +13,7 @@ import { AuthLinksComponent } from './shared/auth-links/auth-links.component';
 import { SocialLinksComponent } from './shared/social-links/social-links.component';
 import { PhoneComponent } from './shared/phone/phone.component';
 import { EmailComponent } from './shared/email/email.component';
+import { ButtonComponent } from './shared/button/button.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { EmailComponent } from './shared/email/email.component';
     AuthLinksComponent,
     SocialLinksComponent,
     PhoneComponent,
-    EmailComponent
+    EmailComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
