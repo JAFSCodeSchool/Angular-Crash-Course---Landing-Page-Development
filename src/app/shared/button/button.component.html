@@ -9,8 +9,10 @@
     ''
 }}
 {{
-    this.shade==='D'?
+    this.shade==='D' && this.size!='L'?
     'border bg-emerald-600 text-emerald-50 border-emerald-600 hover:text-slate-700 ':
+    this.shade==='D' && this.size==='L'?
+    'border bg-emerald-600 text-emerald-50 border-emerald-600 ':
     this.shade==='L'?
     'border bg-emerald-50 text-emerald-600 border-emerald-600 hover:text-emerald-50 ':
     this.shade==='W'?
@@ -32,7 +34,7 @@
 -translate-x-[50%] -translate-y-[50%] z-20 opacity-0 group-hover:opacity-100
 {{
     this.shade==='D'?
-    'bg-emerald-50':'bg-emerald-600'
+    (this.size==='L'?'bg-slate-800':'bg-emerald-50'):'bg-emerald-600'
 }}
 
 ">
