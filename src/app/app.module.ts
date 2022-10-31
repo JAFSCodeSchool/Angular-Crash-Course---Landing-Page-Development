@@ -16,7 +16,14 @@ import { EmailComponent } from './shared/email/email.component';
 import { ButtonComponent } from './shared/button/button.component';
 import { TestComponent } from './test/test.component';
 import { RatingComponent } from './shared/rating/rating.component';
+import { CardComponent } from './shared/card/card.component';
+import { CourseFooterComponent } from './shared/card/course-footer/course-footer.component';
+import { BlogFooterComponent } from './shared/card/blog-footer/blog-footer.component';
+import { HeroComponent } from './home/hero/hero.component';
+import { CoursesComponent } from './home/courses/courses.component';
 
+import {HttpClientModule} from '@angular/common/http';
+import { BlogsComponent } from './home/blogs/blogs.component';
 
 @NgModule({
   declarations: [
@@ -33,11 +40,18 @@ import { RatingComponent } from './shared/rating/rating.component';
     EmailComponent,
     ButtonComponent,
     TestComponent,
-    RatingComponent
+    RatingComponent,
+    CardComponent,
+    CourseFooterComponent,
+    BlogFooterComponent,
+    HeroComponent,
+    CoursesComponent,
+    BlogsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

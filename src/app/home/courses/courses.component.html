@@ -1,0 +1,8 @@
+<section class="py-52">
+    <div class="container mx-auto flex flex-wrap">
+        <app-card *ngFor="let course of this.courses" 
+        class="w-1/3 p-3" 
+        type="C" 
+        [input]="course"></app-card>
+    </div>
+</section>
