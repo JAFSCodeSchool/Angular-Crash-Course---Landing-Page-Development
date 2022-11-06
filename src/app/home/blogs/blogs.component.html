@@ -1,8 +1,11 @@
-<section class="py-52">
-    <div class="container mx-auto flex flex-wrap">
-        <app-card *ngFor="let blog of this.blogs" 
-        class="w-1/3 p-3" 
-        type="B" 
-        [input]="blog"></app-card>
+<section class="py-24">
+    <app-heading
+    subHeading="Latest News"
+    headingText1="Educational Tips &"
+    headingText2="Tricks"
+    specialHeadingID="2"
+    ></app-heading>
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <app-card *ngFor="let blog of this.blogs" class="w-full" type="B" [input]="blog"></app-card>
     </div>
 </section>
