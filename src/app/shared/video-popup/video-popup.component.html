@@ -1,0 +1,9 @@
+<section *ngIf="show" class="flex bg-slate-900 absolute top-0 left-0 h-screen w-full z-50 bg-opacity-70">
+    <svg (click)="this.close()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="cursor-pointer w-10 h-10 absolute top-5 right-5 text-white">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+    <iframe class="m-auto aspect-video w-[90%] md:w-[70%]" [src]="this.safeURL" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+</section>

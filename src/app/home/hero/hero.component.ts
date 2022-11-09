@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroComponent implements OnInit {
 
+  canShowVideo = false;
+  
   constructor() { }
 
   ngOnInit(): void {

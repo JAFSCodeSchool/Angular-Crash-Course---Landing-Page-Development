@@ -25,6 +25,7 @@ import { CoursesComponent } from './home/courses/courses.component';
 import {HttpClientModule} from '@angular/common/http';
 import { BlogsComponent } from './home/blogs/blogs.component';
 import { HeadingComponent } from './shared/heading/heading.component';
+import { VideoPopupComponent } from './shared/video-popup/video-popup.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { HeadingComponent } from './shared/heading/heading.component';
     HeroComponent,
     CoursesComponent,
     BlogsComponent,
-    HeadingComponent
+    HeadingComponent,
+    VideoPopupComponent
   ],
   imports: [
     BrowserModule,
