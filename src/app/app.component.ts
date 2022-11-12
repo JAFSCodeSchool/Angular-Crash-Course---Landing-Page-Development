@@ -28,4 +28,8 @@ export class AppComponent {
   closeSideBar() {
     this.isSidebarShowing = false;
   }
+
+  scrollToTop() {
+    document.body.scrollIntoView({ behavior: 'smooth' })
+  }
 }
