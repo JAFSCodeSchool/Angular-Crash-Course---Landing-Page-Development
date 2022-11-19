@@ -70,5 +70,65 @@
     "price":237,
     "offerPrice":null,
     "rating":4.9
+  },
+  {
+    "name":"Graphic Design: Illustrating Badges and Icons with Geometric Shapes",
+    "thumbnail":"courses-06.jpg",
+    "author":"Jason Williams",
+    "authorImage":"author-06.jpg",
+    "category":"UI/UX Design",
+    "hours":"08hr 15 mins",
+    "lectures":29,
+    "price":237,
+    "offerPrice":null,
+    "rating":4.9
+  },
+  {
+    "name":"Graphic Design: Illustrating Badges and Icons with Geometric Shapes",
+    "thumbnail":"courses-06.jpg",
+    "author":"Jason Williams",
+    "authorImage":"author-06.jpg",
+    "category":"Development",
+    "hours":"08hr 15 mins",
+    "lectures":29,
+    "price":237,
+    "offerPrice":null,
+    "rating":4.9
+  },
+  {
+    "name":"Graphic Design: Illustrating Badges and Icons with Geometric Shapes",
+    "thumbnail":"courses-06.jpg",
+    "author":"Jason Williams",
+    "authorImage":"author-06.jpg",
+    "category":"Data Science",
+    "hours":"08hr 15 mins",
+    "lectures":29,
+    "price":237,
+    "offerPrice":null,
+    "rating":4.9
+  },
+  {
+    "name":"Graphic Design: Illustrating Badges and Icons with Geometric Shapes",
+    "thumbnail":"courses-06.jpg",
+    "author":"Jason Williams",
+    "authorImage":"author-06.jpg",
+    "category":"Business",
+    "hours":"08hr 15 mins",
+    "lectures":29,
+    "price":237,
+    "offerPrice":null,
+    "rating":4.9
+  },
+  {
+    "name":"Graphic Design: Illustrating Badges and Icons with Geometric Shapes",
+    "thumbnail":"courses-06.jpg",
+    "author":"Jason Williams",
+    "authorImage":"author-06.jpg",
+    "category":"Design",
+    "hours":"08hr 15 mins",
+    "lectures":29,
+    "price":237,
+    "offerPrice":null,
+    "rating":4.9
   }
 ]

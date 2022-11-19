@@ -27,6 +27,7 @@ import { BlogsComponent } from './home/blogs/blogs.component';
 import { HeadingComponent } from './shared/heading/heading.component';
 import { VideoPopupComponent } from './shared/video-popup/video-popup.component';
 import { HowItWorkComponent } from './home/how-it-work/how-it-work.component';
+import { SliderComponent } from './shared/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { HowItWorkComponent } from './home/how-it-work/how-it-work.component';
     BlogsComponent,
     HeadingComponent,
     VideoPopupComponent,
-    HowItWorkComponent
+    HowItWorkComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,

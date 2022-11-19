@@ -7,7 +7,10 @@
     specialHeadingID="2"
     align="L"
     ></app-heading>
-    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="container  mx-auto">
+        <app-slider class="block rounded-3xl bg-emerald-50 p-2 py-5 sm:p-10" *ngIf="this.courses.length>0" [courses]="this.courses" ></app-slider>
+    </div>
+    <div class="mt-12 container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <app-card *ngFor="let course of this.courses" class="w-full" type="C" [input]="course"></app-card>
     </div>
 </section>
