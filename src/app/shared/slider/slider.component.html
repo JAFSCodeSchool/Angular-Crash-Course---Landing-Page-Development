@@ -9,7 +9,7 @@
         <div #slideContainer class="w-full overflow-hidden">
             <ul #slider class="flex transition-all duration-300" [style.width.px]="this.sliderWidth"
             [style.marginLeft.px]="this.sliderMarginLeft" >
-                <li [style.width.px]="this.slideWidth" *ngFor="let category of this.categories">
+                <li class="cursor-pointer" (click)="this.onSelect.emit(category)" [style.width.px]="this.slideWidth" *ngFor="let category of this.categories">
                     <div class="mx-5 rounded-2xl px-5 py-5 text-slate-800 font-semibold text-center border-2 border-emerald-800 border-opacity-10">
                         {{category}}
                     </div>

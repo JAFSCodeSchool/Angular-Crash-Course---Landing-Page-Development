@@ -9,7 +9,8 @@ import { Course } from 'src/app/models/course.model';
 })
 export class CoursesComponent implements OnInit {
 
-  courses:Course[] = [];
+  courses: Course[] = [];
+  filteredCourses: Course[] = [];
 
   constructor(private httpClient: HttpClient) { }
 
@@ -21,11 +22,16 @@ export class CoursesComponent implements OnInit {
     this.httpClient.get('assets/data/courses.json').subscribe({
       next: (courses) => {
         this.courses = courses as Course[];
+        this.filteredCourses = courses as Course[];
       },
       error: (errors) => {
         console.log(errors)
       }
     })
+  }
+
+  filterCourses(category: string) {
+    this.filteredCourses = this.courses.filter(course=>course.category===category)
   }
 
 }

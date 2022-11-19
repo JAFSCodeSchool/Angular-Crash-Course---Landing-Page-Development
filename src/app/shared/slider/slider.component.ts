@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, HostListener, Input, OnChanges, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, EventEmitter, HostListener, Input, OnChanges, OnInit, Output, ViewChild } from '@angular/core';
 import { Course } from 'src/app/models/course.model';
 
 @Component({
@@ -10,6 +10,9 @@ export class SliderComponent implements OnInit, AfterViewInit {
 
   @Input('courses')
   courses: Course[] = [];
+
+  @Output('select')
+  onSelect:EventEmitter<string> = new EventEmitter<string>()
 
   @ViewChild('slideContainer')
   slideContainer!: ElementRef;
