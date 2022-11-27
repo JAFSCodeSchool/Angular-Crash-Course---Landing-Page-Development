@@ -28,6 +28,8 @@ import { HeadingComponent } from './shared/heading/heading.component';
 import { VideoPopupComponent } from './shared/video-popup/video-popup.component';
 import { HowItWorkComponent } from './home/how-it-work/how-it-work.component';
 import { SliderComponent } from './shared/slider/slider.component';
+import { JointUsComponent } from './home/joint-us/joint-us.component';
+import { AppStoreComponent } from './home/app-store/app-store.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { SliderComponent } from './shared/slider/slider.component';
     HeadingComponent,
     VideoPopupComponent,
     HowItWorkComponent,
-    SliderComponent
+    SliderComponent,
+    JointUsComponent,
+    AppStoreComponent
   ],
   imports: [
     BrowserModule,
