@@ -30,6 +30,9 @@ import { HowItWorkComponent } from './home/how-it-work/how-it-work.component';
 import { SliderComponent } from './shared/slider/slider.component';
 import { JointUsComponent } from './home/joint-us/joint-us.component';
 import { AppStoreComponent } from './home/app-store/app-store.component';
+import { FeedbacksComponent } from './home/feedbacks/feedbacks.component';
+import { FeedbackCardComponent } from './shared/feedback-card/feedback-card.component';
+import { ClientsComponent } from './home/clients/clients.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +61,10 @@ import { AppStoreComponent } from './home/app-store/app-store.component';
     HowItWorkComponent,
     SliderComponent,
     JointUsComponent,
-    AppStoreComponent
+    AppStoreComponent,
+    FeedbacksComponent,
+    FeedbackCardComponent,
+    ClientsComponent
   ],
   imports: [
     BrowserModule,

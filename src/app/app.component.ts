@@ -18,7 +18,7 @@ export class AppComponent {
       this.isMenuScrolled = false;
 
 
-    console.log(this.isMenuScrolled)
+    // console.log(this.isMenuScrolled)
   }
 
   openSideBar() {

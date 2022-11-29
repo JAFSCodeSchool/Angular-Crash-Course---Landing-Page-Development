@@ -1,5 +1,5 @@
 <div class="flex items-center">
-    <span class="mr-2">{{this.value}}</span>
+    <span *ngIf="showNumber" class="mr-2">{{this.value}}</span>
     <ul class="flex items-center">
         <li *ngFor="let star of [].constructor(totalStars);let i=index">
             <svg *ngIf="(i+1)<=this.value" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-orange-400">

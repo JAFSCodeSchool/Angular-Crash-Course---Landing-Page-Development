@@ -10,6 +10,9 @@ export class RatingComponent implements OnInit {
   @Input('value')
   value = 0;
 
+  @Input('showNumber')
+  showNumber = true;
+
   totalStars = 5;
 
   constructor() { }

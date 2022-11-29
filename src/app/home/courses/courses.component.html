@@ -8,7 +8,9 @@
     align="L"
     ></app-heading>
     <div class="container  mx-auto">
-        <app-slider class="block rounded-3xl bg-emerald-50 p-2 py-5 sm:p-10" *ngIf="this.courses.length>0" [courses]="this.courses" (select)="filterCourses($event)" ></app-slider>
+        <app-slider class="block rounded-3xl bg-emerald-50 p-2 py-5 sm:p-10" *ngIf="this.categories.length>0" [items]="this.categories" (select)="filterCourses($event)" >
+            
+        </app-slider>
     </div>
     <div class="mt-12 container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <app-card *ngFor="let course of this.filteredCourses" class="w-full" type="C" [input]="course"></app-card>

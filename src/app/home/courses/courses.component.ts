@@ -12,6 +12,8 @@ export class CoursesComponent implements OnInit {
   courses: Course[] = [];
   filteredCourses: Course[] = [];
 
+  categories: string[] = [];
+
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit(): void {
@@ -23,11 +25,17 @@ export class CoursesComponent implements OnInit {
       next: (courses) => {
         this.courses = courses as Course[];
         this.filteredCourses = courses as Course[];
+        this.getCategories()
       },
       error: (errors) => {
         console.log(errors)
       }
     })
+  }
+
+  getCategories() {
+    this.categories = this.courses.map((course) => { return course.category })
+    this.categories = [...new Set(this.categories)]
   }
 
   filterCourses(category: string) {
