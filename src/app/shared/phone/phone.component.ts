@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-phone',
@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PhoneComponent implements OnInit {
 
+  @Input('align')
+  align='center';
+  
   constructor() { }
 
   ngOnInit(): void {

@@ -33,6 +33,7 @@ import { AppStoreComponent } from './home/app-store/app-store.component';
 import { FeedbacksComponent } from './home/feedbacks/feedbacks.component';
 import { FeedbackCardComponent } from './shared/feedback-card/feedback-card.component';
 import { ClientsComponent } from './home/clients/clients.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { ClientsComponent } from './home/clients/clients.component';
     AppStoreComponent,
     FeedbacksComponent,
     FeedbackCardComponent,
-    ClientsComponent
+    ClientsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

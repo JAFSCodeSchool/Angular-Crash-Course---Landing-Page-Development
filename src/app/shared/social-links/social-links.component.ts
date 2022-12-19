@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-social-links',
@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SocialLinksComponent implements OnInit {
 
+  @Input('color')
+  color = 'dynamic';
+
+  @Input('align')
+  align = 'center';
+  
   constructor() { }
 
   ngOnInit(): void {
