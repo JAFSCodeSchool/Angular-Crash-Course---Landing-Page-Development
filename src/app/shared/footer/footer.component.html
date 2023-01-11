@@ -1,0 +1,69 @@
+<section class="bg-emerald-50 mt-24 relative overflow-hidden">
+    <img class="absolute top-16 right-16 xl:left-16 animate-upDown opacity-25" src="../../../assets/shapes/shape-21.png" alt="">
+    <img class="absolute bottom-16 left-[90%] animate-leftRight" src="../../../assets/shapes/shape-22.png" alt="">
+    <div class="container mx-auto py-16 z-10 relative">
+        <div class="flex flex-wrap">
+            <div class="w-full md:w-1/2 order-1 lg:order-1 md:order-1 lg:w-1/3 xl:w-1/4 py-5 sm:p-5">
+                <img src="../../../assets/logo.png" alt="">
+                <p class="mt-8 text-2xl">Caribbean Ct</p>
+                <p class="mt-2 text-emerald-600 font-light">Haymarket, Virginia (VA).</p>
+                <app-email class="mt-6 block text-slate-700 font-light" align="left"></app-email>
+                <app-phone class="block mt-2 text-slate-700 font-light" align="left"></app-phone>
+                <app-social-links class="block opacity-60 mt-2" align="left" color="dark"></app-social-links>
+            </div>
+            <div class="w-full md:w-1/2 order-2 lg:order-2 md:order-3 lg:w-1/3 xl:w-1/4 py-5 sm:p-5">
+                <h3 class="text-2xl">Category</h3>
+                <ul class="mt-8 text-slate-700 font-light">
+                    <li class="mt-2"><a [routerLink]="['/','creative']">Creative Writing</a></li>
+                    <li class="mt-2"><a [routerLink]="['/','film']">Film & Video</a></li>
+                    <li class="mt-2"><a [routerLink]="['/','graphic']">Graphic Design</a></li>
+                    <li class="mt-2"><a [routerLink]="['/','ui']">UI/UX Design</a></li>
+                    <li class="mt-2"><a [routerLink]="['/','business']">Business Analytics</a></li>
+                    <li class="mt-2"><a [routerLink]="['/','marketing']">Marketing</a></li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/2 order-3 lg:order-3 md:order-4 lg:w-1/3 xl:w-1/4 py-5 sm:p-5">
+                <h3 class="text-2xl">Quick Links</h3>
+                <ul class="mt-8 text-slate-700 font-light">
+                    <li class="mt-2"><a [routerLink]="['/','privacy']">Privacy Policy</a></li>
+                    <li class="mt-2"><a [routerLink]="['/','discussion']">Discussion</a></li>
+                    <li class="mt-2"><a [routerLink]="['/','terms']">Terms & Conditions</a></li>
+                    <li class="mt-2"><a [routerLink]="['/','customer']">Customer Support</a></li>
+                    <li class="mt-2"><a [routerLink]="['/','course']">Course FAQ’s </a></li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/2 order-4 lg:order-4 md:order-2 lg:w-1/3 xl:w-1/4 py-5 sm:p-5">
+                <h3 class="text-2xl">Subscribe</h3>
+                <p class="mt-8 text-slate-700 font-light">
+                    Lorem Ipsum has been them an industry printer took a galley make book.
+                </p>
+                <!-- <app-subscribe-form></app-subscribe-form> -->
+                <app-subscribe-form-reactive></app-subscribe-form-reactive>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-slate-900 text-slate-200 text-sm">
+    <div class="container mx-auto py-4">
+        <div class="flex flex-wrap">
+            <div class="w-full lg:w-1/2">
+                <ul class="flex flex-wrap gap-x-3 justify-center lg:justify-start">
+                    <li><a class="hover:text-emerald-600 transition-all duration-300" [routerLink]="['']">Terms of
+                            Service</a></li>
+                    <li>*</li>
+                    <li><a class="hover:text-emerald-600 transition-all duration-300" [routerLink]="['']">Privacy
+                            Policy</a></li>
+                    <li>*</li>
+                    <li><a class="hover:text-emerald-600 transition-all duration-300" [routerLink]="['']">Sitemap</a>
+                    </li>
+                    <li>*</li>
+                    <li><a class="hover:text-emerald-600 transition-all duration-300" [routerLink]="['']">Security</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full lg:w-1/2 text-center lg:text-right pt-5 lg:pt-0">
+                @JAFSCodeSchool
+            </div>
+        </div>
+    </div>
+</section>

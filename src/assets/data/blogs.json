@@ -1,0 +1,32 @@
+[
+  {
+    "name":"Data Science and Machine Learning with Python - Hands On!",
+    "thumbnail":"blog-01.jpg",
+    "author":"Jason Williams",
+    "authorImage":"author-01.jpg",
+    "category":"Science",
+    "date":"21-03-2021",
+    "likes":2568,
+    "link":"/"
+  },
+  {
+    "name":"Create Amazing Color Schemes for Your UX Design Projects",
+    "thumbnail":"blog-02.jpg",
+    "author":"Pamela Foster",
+    "authorImage":"author-02.jpg",
+    "category":"UX Design",
+    "date":"21-03-2021",
+    "likes":2568,
+    "link":"/"
+  },
+  {
+    "name":"Culture & Leadership: Strategies for a Successful Business",
+    "thumbnail":"blog-03.jpg",
+    "author":"Rose Simmons",
+    "authorImage":"author-03.jpg",
+    "category":"Business",
+    "date":"21-03-2021",
+    "likes":2568,
+    "link":"/"
+  }
+]

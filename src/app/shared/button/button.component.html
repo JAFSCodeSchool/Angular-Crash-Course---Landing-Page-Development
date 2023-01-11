@@ -1,0 +1,42 @@
+<button [disabled]="this.disabled" class="disabled:opacity-30 relative group transition-all duration-500 overflow-clip
+{{
+    !this.disabled && this.animation==='F'&&this.shade==='D'?
+    'hover:bg-emerald-50':
+    !this.disabled && this.animation==='F'&&this.shade==='L'?
+    'hover:bg-emerald-600':
+    !this.disabled && this.animation==='F'&&this.shade==='W'?
+    'hover:bg-emerald-600':
+    ''
+}}
+{{
+    this.shade==='D' && this.size!='L'?
+    'border bg-emerald-600 text-emerald-50 border-emerald-600 hover:text-slate-700 ':
+    this.shade==='D' && this.size==='L'?
+    'border bg-emerald-600 text-emerald-50 border-emerald-600 ':
+    this.shade==='L'?
+    'border bg-emerald-50 text-emerald-600 border-emerald-600 hover:text-emerald-50 ':
+    this.shade==='W'?
+    'border bg-white text-slate-700 border-emerald-600 hover:text-emerald-50 ':
+    'text-emerald-600 hover:text-slate-700'
+}} 
+{{
+    this.size==='S'?
+    'px-5 py-2 rounded-lg font-medium text-md':
+    this.size==='M'?
+    'px-7 py-3 rounded-lg font-medium text-lg':
+    'px-4 xl:px-8 py-4 rounded-lg font-semibold text-lg'
+}}">
+<span class="z-30 relative">
+    {{this.name}}
+</span>
+<span *ngIf="this.shade!='NA' && this.animation==='C'" class="absolute top-[50%] left-[50%] transition-all duration-1000 
+ aspect-square w-[20%] group-hover:w-[200%] rounded-full
+-translate-x-[50%] -translate-y-[50%] z-20 opacity-0 group-hover:opacity-100
+{{
+    this.shade==='D'?
+    (this.size==='L'?'bg-slate-800':'bg-emerald-50'):'bg-emerald-600'
+}}
+
+">
+</span>
+</button>

@@ -1,0 +1,18 @@
+<section class="pt-24">
+    <div class="container mx-auto px-5 sm:px-24 xl:px-10 2xl:px-0">
+        <div class="relative bg-emerald-50 rounded-3xl py-10 px-0 md:px-10 xl:px-24">
+            <img class="animate-twSpin animate-infinite animate-duration-[5000ms] absolute top-8 right-8"
+                src="../../../assets/shapes/shape-12.png" alt="">
+            <app-heading class="mx-auto md:mx-0 py-5 pb-10 block max-w-md" subHeading=""
+                headingText1="Best Supporter of" headingText2="Edule." specialHeadingID="2" align="L">
+            </app-heading>
+            <app-slider *ngIf="this.clients.length>0" [slideConfig]="this.slideConfig" [items]="this.clients">
+                <ng-template #template let-item>
+                    <div class="flex justify-center">
+                        <img src="../../../assets/brands/{{item.clientImage}}" alt="">
+                    </div>
+                </ng-template>
+            </app-slider>
+        </div>
+    </div>
+</section>
