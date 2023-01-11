@@ -34,6 +34,9 @@ import { FeedbacksComponent } from './home/feedbacks/feedbacks.component';
 import { FeedbackCardComponent } from './shared/feedback-card/feedback-card.component';
 import { ClientsComponent } from './home/clients/clients.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { SubscribeFormComponent } from './shared/subscribe-form/subscribe-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SubscribeFormReactiveComponent } from './shared/subscribe-form-reactive/subscribe-form-reactive.component';
 
 @NgModule({
   declarations: [
@@ -66,12 +69,16 @@ import { FooterComponent } from './shared/footer/footer.component';
     FeedbacksComponent,
     FeedbackCardComponent,
     ClientsComponent,
-    FooterComponent
+    FooterComponent,
+    SubscribeFormComponent,
+    SubscribeFormReactiveComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

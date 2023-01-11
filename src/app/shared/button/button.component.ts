@@ -7,6 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
 
+  @Input('disabled')
+  disabled = false;
+  
   @Input('size')
   size = 'S'; // S,M,L
 
